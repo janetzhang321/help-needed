@@ -1,0 +1,71 @@
+Team BoneAppleTea
+
+farhanH, janetZ, lindseyM, patrickC -- 2016-12-01 12:30
+Group began work on design document. Site map completed, component map underway.
+
+patrickC -- 2016-12-04 16:24
+Added component map to the design document, fixed time stamp on devlog (switched from 12 hour to 24 hour time format), added Database Schema
+
+farhanH -- 2016-12-04 18:08
+Finished looking over design document, pushed final DESIGN.pdf to github
+
+lindseyM -- 2016-12-06 00:23
+Created the bare minimum bootstrap page
+
+farhanH -- 2016-12-06 12:19
+Updated schedule, switched completion date of databaseIO.py and apiManager.py
+
+janetZ, lindseyM -- 2016-12-06 12:30
+Added the scrollable button panel
+
+patrickC -- 2016-12-06 13:57
+Add framework for app.py, finished basic functionality for databaseIO.py
+
+lindseyM -- 2016-12-07 02:10
+minor changes to html/css; map column being pushed to second row for some reason
+
+janetZ, lindseyM --2016-12-07 12:27
+finished bare bootstrap for page; will style after map is functioning
+
+farhanH -- 2016-12-07 21:24
+added geochartmap.html: uses Google Maps JS API to make interactive US Map.
+Frontend to incorporate into map.html later.
+
+patrickC -- 2016-12-08 21:34
+Note: Didn't have enough time to push an update to the devlog during class
+Laid the basic foundations for apiManager, might need some modifications in the future depending on structure of the request
+
+lindseyM, janetZ -- 2016-12-09 12:20
+Wrote csv to dictionary function so we don't need Pandas anymore.
+
+patrickC -- 2016-12-10 21:45
+Wrote a python script to generate a mapping between state code and state name
+Modified apiManager.py base on the structure of the api links
+
+janetZ -- 2016-12-11 02:54
+Configured API Key for plotly map on my working env...It works, it's beautiful :')
+
+lindseyM -- 2016-12-13 00:53
+Only made changes to map.html; tried to make toggle switches show map; it does not work
+
+farhanH, lindseyM, patrickC -- 2016-12-13 17:00
+Put Map on map.html, and began configuring app.py and map.py
+
+farhanH -- 2016-12-13 22:00
+Created Map for American Community Service 5 year Data, and put on Map.html
+
+patrickC -- 2016-12-14 20:42
+Modified README.md to meet the specification and provide more detailed information
+
+patrickC -- 2016-12-14 21:52
+Modified map.html to pass the census url to app.py which currently takes the url and prints the parsed url (url.split('/')) for testing purpose
+Note: We need to replace the parsed url with something in the form of render_template("map.html", url="map embed link")
+
+lindseyM, -- 2016-12-14 22:12
+Edited design changes doc
+
+farhanH, -- 2016-12-15 03:14
+Finished map.py, map.html, and app.py. Completed Functionality
+
+lindseyM -- 2016-12-15 03:36
+Finished styling, testing.

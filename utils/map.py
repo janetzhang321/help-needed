@@ -2,7 +2,7 @@ import plotly.plotly as py
 import plotly.tools as tls
 from urllib2 import urlopen
 import os
-tls.set_credentials_file(username='farhan3231', api_key=open(os.getcwd() + '/apiKey.txt').read().split("\n")[1])
+tls.set_credentials_file(username='JanetZhang', api_key=open(os.getcwd() + '/apiKey.txt').read().split("\n")[0])
 from apiManager import censusAPIManager
 
 url="http://api.census.gov/data/2013/language?get=EST,LANLABEL,NAME&for=state:*&LAN=625"

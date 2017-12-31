@@ -20,189 +20,150 @@
 </head>
 
 <body style="margin: 20px 20px 20px 20px;">
-<div class="container">
-  <div class="row">
-    <!--buttons-->
-    <div class="col-md-4 pre-scrollable" style="border: 2px solid black; max-height: 600px">
-      <!--<div class="container" style="position: fixed">-->
+  <div class="container">
+    <div class="row">
+      <!--buttons-->
+      <div class="col-md-4 pre-scrollable" style="border: 2px solid black; max-height: 600px">
+        <!--<div class="container" style="position: fixed">-->
         <center>
           <h1>US Census Map</h1>
-        </center>
-        <center>
           <h4>View by</h4>
         </center>
 
         <div class="row">
           <center>
             <div class="col-md-12">
-              <a href="/" class="btn btn-default">
-                <br> Blank the map
-              </a>
+              <a href="/" class="btn btn-default">Blank the map</a>
             </div>
           </center>
         </div>
 
-        <br> Population
+        <hr>
+        Population
         <div class="row">
 
-        <div class="col-md-6">
-          <a href="/state"
-            class="btn btn-default">
-            <br> States Population
-          </a>
+          <div class="col-md-6">
+            <a href="/state" class="btn btn-default">States Population</a>
+          </div>
+
         </div>
+        <hr>
+        Language
+        <div class="row">
+
+          <div class="col-md-6">
+            <a href="/french" class="btn btn-default">French</a>
+          </div>
+
+
+          <div class="col-md-6">
+            <a href="/spanish" class="btn btn-default">Spanish</a>
+          </div>
+
+
+          <!--</div>-->
+        </div>
+
+        <br>
+        <div class="row">
+
+          <div class="col-md-6">
+            <a href="/german" class="btn btn-default">German</a>
+          </div>
+
+          <div class="col-md-6">
+            <a href="/portuguese" class="btn btn-default">Portuguese</a>
+          </div>
+
+        </div>
+
+        <hr>
+        Health Insurance
+        <div class="row">
+
+
+          <div class="col-md-6">
+            <a href="/insured" class="btn btn-default">Number of Insured People</a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="/uninsured" class="btn btn-default">Number of Uninsured People</a>
+          </div>
+        </div>
+
+        <hr> 
+        Poverty
+        <div class="row">
+
+          <div class="col-md-6">
+            <a href="/poverty" class="btn btn-default">Number of People in Poverty</a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+
+          <div class="col-md-6">
+            <a href="/povertyMOE" class="btn btn-default">Number of People in Poverty Margin of Error</a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="/poverty04" class="btn btn-default">Number of People in Poverty Ages 0-4</a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="/poverty04MOE" class="btn btn-default">Number of People in Poverty Ages 0-4 Margin of Error</a>
+          </div>
+        </div>
+        <br>
+
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="/poverty517" class="btn btn-default">Number of People in Poverty Ages 5-17</a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="/poverty517MOE" class="btn btn-default">Number of People in Poverty Ages 5-17 Margin of Error</a>
+          </div>
+
+        </div>
+        <hr> 
+        Income
+        <div class="row">
+
+          <div class="col-md-6">
+            <a href="/householdincome" class="btn btn-default">Median Household Income</a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+
+          <div class="col-md-6">
+            <a href="/householdincomeerror" class="btn btn-default">Median Household Income Margin of Error</a>
+          </div>
+
+        </div>
+
 
       </div>
 
-      <br> Language
-      <div class="row">
 
-        <div class="col-md-6">
-          <a href="/french"
-            class="btn btn-default">
-            <br> French
-          </a>
+
+      <!---->
+      <!--map-->
+      <div class="col-md-8" style="border: 2px solid black">
+        <iframe width=100% height="700" frameborder="0" scrolling="no" src={{ url }}></iframe>
+        <div>
         </div>
-
-
-        <div class="col-md-6">
-          <a href="/spanish"
-            class="btn btn-default">
-            <br> Spanish
-          </a>
-        </div>
-
-
-      <!--</div>-->
       </div>
-	  
-	  <br>
-      <div class="row">
-
-        <div class="col-md-6">
-          <a href="/german"
-            class="btn btn-default">
-            <br> German
-          </a>
-        </div>
-
-        <div class="col-md-6">
-          <a href="/portuguese"
-            class="btn btn-default">
-            <br> Portuguese
-          </a>
-        </div>
-
-      </div>
-	  
-      <br> Health Insurance
-      <div class="row">
-
-
-        <div class="col-md-6">
-          <a href="/insured"
-            class="btn btn-default">
-            <br> Number of Insured People
-          </a>
-        </div>
-	</div><br>
-<div class="row">
-        <div class="col-md-6">
-          <a href="/uninsured"
-            class="btn btn-default">
-            <br> Number of Uninsured People
-          </a>
-        </div>
-</div>
-      
-      <br> Poverty
-      <div class="row">
-
-        <div class="col-md-6">
-          <a href="/poverty"
-            class="btn btn-default">
-            <br> Number of People in Poverty
-          </a>
-        </div>
-	</div><br>
-      <div class="row">
-		
-		<div class="col-md-6">
-			<a href="/povertyMOE"
-				class="btn btn-default">
-				<br> Number of People in Poverty Margin of Error
-			</a>
-		</div>
-		</div>
-		<br>
-		  <div class="row">
-        <div class="col-md-6">
-          <a href="/poverty04"
-            class="btn btn-default">
-            <br> Number of People in Poverty Ages 0-4
-          </a>
-        </div>
-	</div><br>
-		<div class="row">
-		<div class="col-md-6">
-			<a href="/poverty04MOE"
-				class="btn btn-default">
-				<br> Number of People in Poverty Ages 0-4 Margin of Error
-			</a>
-		</div>
-		</div><br>
-		
-		<br>
-		<div class="row">
-		<div class="col-md-6">
-          <a href="/poverty517"
-            class="btn btn-default">
-            <br> Number of People in Poverty Ages 5-17
-          </a>
-        </div>
-		</div><br>
-		<div class="row">
-		<div class="col-md-6">
-			<a href="/poverty517MOE"
-				class="btn btn-default">
-				<br> Number of People in Poverty Ages 5-17 Margin of Error
-			</a>
-		</div>
-
-		</div>
-		<br> Income
-		<div class="row">
-
-		<div class="col-md-6">
-			<a href="/householdincome"
-				class="btn btn-default">
-				<br> Median Household Income
-			</a>
-		</div>
-		</div><br>
-		<div class="row">
-		
-		<div class="col-md-6">
-			<a href="/householdincomeerror"
-				class="btn btn-default">
-				<br> Median Household Income Margin of Error
-			</a>
-		</div>
-
-		</div>
-
-
-</div>
-
-
-
-<!---->
-<!--map-->
-<div class="col-md-8" style="border: 2px solid black">
-<iframe width=100% height="580" frameborder="0" scrolling="no" src={{ url }}></iframe>
-<div>
-</div>
-</div>
 
 </body>
 
